@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -8,7 +7,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
-  return <div>{message}</div>;
+  return <div className="text-3xl font-bold underline">{message}</div>;
 }
 
 export default App
