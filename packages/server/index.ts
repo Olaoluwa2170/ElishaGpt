@@ -8,6 +8,10 @@ const app = express();
 app.use(express.json());
 app.use(router);
 
+app.get("/", (req, res) => {
+  res.send("Server is running perfectly on Vercel 🚀");
+});
+
 const port = process.env.PORT || 8000;
 
 // app.listen(port, () => {
