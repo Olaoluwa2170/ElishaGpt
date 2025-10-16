@@ -1,11 +1,11 @@
 {
   "name": "server",
-  "module": "index.ts",
-  "main": "index.ts",
+  "module": "server.ts",
+  "main": "server.ts",
   "type": "module",
   "scripts": {
-    "start": "node index.ts",
-    "dev": "bun --watch run index.ts"
+    "start": "node server.ts",
+    "dev": "bun --watch run server.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
