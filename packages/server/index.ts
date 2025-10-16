@@ -4,7 +4,7 @@ import router from "./route";
 
 dotenv.config();
 
-export const app = express();
+const app = express();
 app.use(express.json());
 app.use(router);
 
@@ -14,7 +14,7 @@ const port = process.env.PORT || 8000;
 //   console.log(`Server is running on port http://localhost:${port}`);
 // });
 
-module.exports = app;
+export default app;
 
 // layers
 // controller

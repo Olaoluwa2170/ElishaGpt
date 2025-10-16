@@ -1,4 +1,4 @@
-const app = require("./index.ts");
-const serverless = require("serverless-http");
-
-module.exports = serverless(app);
+import app from "./index";
+import serverless from "serverless-http";
+    
+export default serverless(app);
