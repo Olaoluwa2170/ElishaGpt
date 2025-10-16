@@ -1,18 +1,23 @@
-import express from "express";
 import dotenv from "dotenv";
+import express from "express";
+import router from "./route";
 
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 8000;
+app.use(express.json());
+app.use(router);
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello World" });
-});
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
   console.log(`Server is running on port http://localhost:${port}`);
 });
+
+// layers
+// controller
+// service
+// repository
+// conversation.repository.ts
+// chat.service.ts
+// chat.controller.ts
