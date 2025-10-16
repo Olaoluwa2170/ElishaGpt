@@ -18,6 +18,7 @@
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "openai": "^5.16.0",
+    "serverless-http": "^4.0.0",
     "zod": "^4.1.7"
   }
 }
